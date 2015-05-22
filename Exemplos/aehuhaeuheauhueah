@@ -1,0 +1,68 @@
+dontpad.com/logprogpacceterca
+
+1 - Ler 3 notas e tirar a média delas
+	Obs: nota 1 tem peso 4.0
+		 nota 2 tem peso 5.0
+		 nota 3 tem peso 3.0
+
+		Resolução
+	Método 1: Uma variável para cada nota
+	Método 2: Uma lista (vetor) com todas as notas
+
+:)
+
+Ernandes e Cezar
+
+
+
+
+
+
+bell e lucas
+
+a= float (input("Digite a primeira nota: "))
+b= float (input("Digite a segunda nota: "))
+c= float (input("Digite a terceira nota: "))
+soma=a+b+c
+media=soma/3
+print" a media é", media
+
+
+leo e marcos
+
+lista = raw_input().split(" ")
+lista[0] = float(lista[0])
+lista[1] = float(lista[1])
+lista[2] = float(lista[2])
+print ((lista[0] * 4.0)+ (lista[1] * 5.0) + (lista[2]*3.0))/5+3+4
+
+
+
+Matheus e Davi
+
+#include <stdio.h>
+int main (void){
+	float n1, n2, n3, med;
+	printf ("Media de Notas \n"); 
+	printf ("Insira primeira nota \n");
+	scanf (" %f", &n1);
+	printf ("Insira segunda nota \n");
+	scanf (" %f", &n2);	
+	printf ("Insira terceira nota \n");
+	scanf (" %f", &n3);
+	
+		med =((n1*4) + (n2*5) + (n3*3))/12;
+	
+	printf ("A média é %0.f", med);
+	
+
+	
+	
+	
+	
+	return (0);
+}
+
+
+
+

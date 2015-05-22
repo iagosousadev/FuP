@@ -1,0 +1,181 @@
+dontpad.com/logprogpaccequarta
+email: iagsousa.ufc@gmail.com
+1 - Ler 3 notas e tirar a média delas
+	Obs: nota 1 tem peso 4.0
+		 nota 2 tem peso 5.0
+		 nota 3 tem peso 3.0
+
+		Resolução
+	Método 1: Uma variável para cada nota
+	Método 2: Uma lista (vetor) com todas as notas
+	Método 3: Uma lista com tamanho N definido pelo
+			usuário, o usuário deverá informar o
+			tamanho da lista, e depois preencher
+			com o valor da nota em uma lista e o
+			peso em outra lista.
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main(){
+	float n1,n2,n3,media;
+	
+	cout.precision(3);
+	cout << "Digite a primeira nota:" << endl;
+	cin >> n1;
+	cout << "Digite a segunda nota:" << endl;
+	cin >> n2;
+	cout << "Digite a terceira nota:" << endl;
+	cin >> n3;
+	
+	media = (n1 * 4 + n2 * 5 + n3 * 3)/12;
+	cout << "media = " << media << endl;
+	
+	return 0;
+}
+
+//Victor Queiroz c plus plus
+
+#include <iostream>
+
+using namespace std;
+
+int main () {
+
+float n1, n2, n3;
+
+cout << "Digite três notas! " << endl;
+cin >> n1 >> n2 >> n3;
+
+
+float soma = (n1 * 4.0) + (n2 * 5.0) + (n3 * 3.0);
+float media = soma/12.0;
+
+cout << "Sua média é: " << media;
+
+	return 0;
+
+}
+
+
+Enoque  (Metodo 3)
+
+#include <stdio.h>
+
+int main () {
+	int n,i;
+	
+	scanf ("%d", &n);
+	
+	float vetor1 [n], vetor2 [n], resultado, aux;
+	
+	aux = 0;
+	resultado = 0;
+	
+	for (i = 0; i < n; i++) {
+		scanf ("%f", &vetor1 [i]);
+		scanf ("%f", &vetor2 [i]);
+		vetor1 [i] = vetor1 [i] * vetor2 [i];
+		aux += vetor2[i];
+		resultado += vetor1 [i];
+	}
+	
+	
+	resultado = resultado / aux;
+	
+	printf ("%.2f", resultado);
+	return 0;
+}
+
+
+Fim
+
+
+Fabio Medeiro & João Henrique
+
+#include <stdio.h>
+
+int main()
+{
+    float n1, n2, n3, p1, p2, p3, media;
+
+    printf("Insira a nota 1: \n");
+    scanf("%f", &n1);
+
+    printf("Digite o peso da nota 1 \n");
+    scanf("%f", &p1);
+
+    printf("Insira a nota 2: \n");
+    scanf("%f", &n2);
+
+    printf("Digite o peso da nota 2 \n");
+    scanf("%f", &p2);
+
+    printf("Insira a nota 3: \n");
+    scanf("%f", &n3);
+
+    printf("Digite o peso da nota 3 \n");
+    scanf("%f", &p3);
+
+    if(n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10 || n3 < 0 || n3 > 10){
+        printf("Nota nao pode ser menor que 0 e nem maior que 10");
+    }else{
+        media = (n1*p1 + n2*p2 + n3*p3) / (p1+p2+p3);
+
+        printf("media = %.2f", media);
+        printf("\n%.1f\n%.1f\n%.1f", p1, p2, p3);
+    }
+
+    return (0);
+}
+Fabio Medeiro & João Henrique
+
+
+
+
+
+================
+Gleidson - Joao Pedro
+=====================
+
+#include<iostream>
+
+
+using namespace std;
+
+int main(){
+
+	float nota1, nota2, nota3, media;
+
+	int peso1, peso2, peso3;
+
+	cout.precision(3);
+
+	cout << "Digite a nota 1: ";
+	cin >> nota1;
+
+	cout << "Digite o Peso 1: ";
+	cin >> peso1;
+
+
+	cout << "Digite a nota 2: ";
+	cin >> nota2;
+
+	cout << "Digite o Peso 2: ";
+	cin >> peso2;
+
+
+	cout << "Digite a nota 3: ";
+	cin >> nota3;
+
+	cout << "Digite o Peso 3: ";
+	cin >> peso3;
+
+	media = (nota1 * peso1 + nota2 * peso2 + nota3 *peso3)/(peso1+peso2+peso3);
+
+	cout << "A media = " << media << endl;
+
+	return 0;
+	}
+
