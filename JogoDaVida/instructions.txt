@@ -1,0 +1,22 @@
+1 - Se uma célula viva tiver menos que 2 vizinhos ela morre;
+2 - Qualquer célula viva com 2 ou 3 vizinhos continua viva na próxima geração;
+3 - Se uma célula viva tiver mais de 3 vizinhos ela morre por over-populate;
+4 - Se uma célula morta tiver EXATAMENTE 3 vizinhos ela se torna uma célula viva.
+
+-------------------
+Fazer uma matriz n por n e usar um tamanho x por x sendo x < n para delimitar o limite da janela de visão do usuário para que não haja erros nos testes, se o elemento sair da visão do usuário e encostar no limite da janela total então ele será destruído para não causar problemas no código.
+
+A função is_alive testa se o elemento está vivo ou morto retornando 1 se estiver vivo e 0 se estiver mort.
+
+A função testar vai checar quantos vizinho o elemento testado tem e retornar um numero inteiro que correspone ao numero de vizinhos vivos que o elemento atual tem.
+
+A função transpor vai fazer a transposição do elementos da matriz de origem para a destino fazendo todas as transformações das 4 regras para cada elemento.
+
+A função transpor_origem irá pegar todo o conteúdo que está em destino e irá passar para a matriz origem para que possa ser transformado novamente.
+
+A função imprimir_origem irá mostrar na tela do terminal o estado atual da matriz do jogo.
+
+A função processameto vai pegar todos os elementos da matriz de origem e fazer todos os testes de transformação dos padrões e guardalos na matriz de destino após todas as transformações a matriz de origem irá receber o conteúdo da matriz de destino.
+
+A função carregar_arquivo irá preencher a matriz atual com as informações contidas no arquivo da pattern inicial pre-feita por nós, todo o processamento é feito no algorítimo.
+
